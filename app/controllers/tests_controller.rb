@@ -22,9 +22,9 @@ class TestsController < ApplicationController
     @test = Test.new
   end
 
-  # GET /tests/1/edit
-  def edit
-  end
+  # # GET /tests/1/edit
+  # def edit
+  # end
 
   # POST /tests or /tests.json
   def create
@@ -41,27 +41,27 @@ class TestsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /tests/1 or /tests/1.json
-  def update
-    respond_to do |format|
-      if @test.update(test_params)
-        format.html { redirect_to @test, notice: "Test was successfully updated." }
-        format.json { render :show, status: :ok, location: @test }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @test.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+#   # PATCH/PUT /tests/1 or /tests/1.json
+#   def update
+#     respond_to do |format|
+#       if @test.update(test_params)
+#         format.html { redirect_to @test, notice: "Test was successfully updated." }
+#         format.json { render :show, status: :ok, location: @test }
+#       else
+#         format.html { render :edit, status: :unprocessable_entity }
+#         format.json { render json: @test.errors, status: :unprocessable_entity }
+#       end
+#     end
+#   end
 
-  # DELETE /tests/1 or /tests/1.json
-  def destroy
-    @test.destroy
-    respond_to do |format|
-      format.html { redirect_to tests_url, notice: "Test was successfully destroyed." }
-      format.json { head :no_content }
-    end
-  end
+#   # DELETE /tests/1 or /tests/1.json
+#   def destroy
+#     @test.destroy
+#     respond_to do |format|
+#       format.html { redirect_to tests_url, notice: "Test was successfully destroyed." }
+#       format.json { head :no_content }
+#     end
+#   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
